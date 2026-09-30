@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background-color: #15151e;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* F1 Red Accent Line on Top */
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #e10600;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.logo-area {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-area h1 {
+    color: #e10600;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    font-style: italic;
+}
+
+.logo-area p {
+    color: #94949b;
+    font-size: 14px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    color: #c0c0c8;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #2b2b36;
+    border: 1px solid #383844;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #e10600;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    text-transform: none;
+    color: #94949b;
+}
+
+.remember-me input {
+    accent-color: #e10600;
+}
+
+.form-actions a {
+    color: #94949b;
+    text-decoration: none;
+}
+
+.form-actions a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: #e10600;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #b30500;
+}
+
+.signup-redirect {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #94949b;
+}
+
+.signup-redirect a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-redirect a:hover {
+    color: #e10600;
+    text-decoration: underline;
+}
